@@ -1,10 +1,13 @@
 import { Route, createRoutesFromElements } from 'react-router-dom'
+import Layout from './components/Layout'
+import Home from './components/Home'
+import Locations from './components/Locations'
+import LocationDetails from './components/LocationDetails'
 
 export default createRoutesFromElements(
   <Route path="/" element={<Layout />}>
     <Route index element={<Home />} />
-    <Route path="sort" element={<Sort />} />
-    <Route path="recipes" element={<Recipes />} />
-    <Route path="recipes/:id" element={<RecipeDetails />} />
+    <Route path="locations" element={<Locations />} />
+    <Route path="locations/:id" element={<LocationDetails />} />
   </Route>,
 )

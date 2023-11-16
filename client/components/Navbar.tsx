@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <nav>
       <span>
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
       </span>
       <span>
         <a href="/">My Location</a>
