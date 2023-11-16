@@ -1,6 +1,13 @@
+/* Colour Palette:
+F6F4EB = grey - main background colour
+91C8E4 = light blue
+749BC2 = grey blue
+4682A9 = dark blue - NavBar
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 
-html, 
+html,
 body {
   font-family: 'Montserrat', sans-serif;
 }
