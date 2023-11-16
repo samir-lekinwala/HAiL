@@ -1,8 +1,9 @@
 import { useFruits } from '../hooks/useFruits.ts'
+import weatherapi from '../apis/weatherapi.ts'
 
 function App() {
   const { data } = useFruits()
-
+  weatherapi()
   return (
     <>
       <div className="app">
