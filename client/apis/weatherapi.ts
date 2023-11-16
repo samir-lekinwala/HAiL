@@ -1,8 +1,8 @@
 import { fetchWeatherApi } from 'openmeteo'
 export default async function weatherapi() {
   const params = {
-    latitude: -34,
-    longitude: 100,
+    latitude: 1.3,
+    longitude: 103,
     current: ['temperature_2m', 'rain', 'snowfall', 'cloud_cover'],
   }
   const url = 'https://api.open-meteo.com/v1/forecast'
