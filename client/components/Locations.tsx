@@ -1,8 +1,8 @@
-import { getLocations } from '../apis/apiClient'
+// import { getLocations } from '../apis/apiClient'
 
 export default async function Locations() {
-  const show = await getLocations()
-  console.log(show)
+  // const show = await getLocations()
+  // console.log(show)
 
   return (
     <>
