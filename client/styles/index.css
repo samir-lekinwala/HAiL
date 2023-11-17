@@ -11,3 +11,19 @@ html,
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+/* CSS for View all Locations */
+
+.locationContainer {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.locationImg {
+  width: 300px;
+}
+
+.locationButton {
+  background-color: none;
+  border: none;
+}
