@@ -33,7 +33,7 @@ export default function Locations() {
                   src={`${city.imageURL}`}
                   alt={`${city.city} of ${city.country}`}
                 />
-                {city.city}
+                <div className="locationText">{city.city}</div>
               </button>
             </Link>
           </>
