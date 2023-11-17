@@ -54,8 +54,15 @@ export default function Home() {
 
   return (
     <>
-      <h1>Weather</h1>
-
+      <h1>Home Page</h1>
+      <div key={defaultLocation.city} className="hero-image">
+        <img src={defaultLocation.imageURL} alt={defaultLocation.city} />
+        <div className="hero-text">
+          <h1>{defaultLocation.city}</h1>
+          <p>Sunny 21c</p>
+          <button>Hire me</button>
+        </div>
+      </div>
       <div className="image-container">
         <div className="weather-icon">
           <h2>{data.temperature2m?.toFixed(0)}°C</h2>
@@ -68,11 +75,6 @@ export default function Home() {
             alt={'temperature'}
           ></img>
         </div>
-        <p>
-          {defaultLocation.city}
-
-          {defaultLocation.country}
-        </p>
       </div>
     </>
   )
