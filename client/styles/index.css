@@ -12,6 +12,96 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Samir */
+
+.hailHome a {
+  color: white;
+  text-decoration: none;
+  /* background-color: red; */
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #4682a9;
+}
+
+.navbar span {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar span:hover,
+.dropdown:hover .dropbtn {
+  background-color: 91C8E4;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4682a9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content span {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content span:hover {
+  background-color: #749bc2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a,
+.dropbtn a {
+  text-decoration: none;
+  color: white;
+}
+/* CSS for View all Locations */
+
+.locationContainer {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.locationImg {
+  width: 300px;
+}
+
+.locationButton {
+  background-color: none;
+  border: none;
+}
+
 /*homepage css */
 .image-container {
   background-image: url();
