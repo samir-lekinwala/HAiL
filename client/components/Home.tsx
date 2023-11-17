@@ -1,5 +1,4 @@
 import weatherapi from '../apis/weatherapi.ts'
-import { getAllLocations } from '../../server/db/db.ts'
 import { useEffect, useState } from 'react'
 
 export default function Home() {
@@ -12,15 +11,16 @@ export default function Home() {
       'https://a.cdn-hotels.com/gdcs/production133/d294/4e4195aa-b9ca-42cd-923f-e8a65c8c5c7b.jpg',
   })
 
-  useEffect(() => {
-    getWeatherData
-  }, [])
+  const [isSunny, setIsSunny] = useState()
+  const [isRaining, setIsRaining] = useState()
+  const [isCloudy, setIsCloudy] = useState()
 
   async function getWeatherData() {
     const weatherData = await weatherapi(
       defaultLocation.latitude,
       defaultLocation.longitude,
     )
+    console.log(weatherData)
     return weatherData
   }
   getWeatherData()
