@@ -7,8 +7,8 @@ export default function Home() {
   const [defaultLocation, setDefaultLocation] = useState({
     city: 'Auckland',
     country: 'New Zealand',
-    latitude: 45.56,
-    longitude: -73.88,
+    latitude: -36.86,
+    longitude: 174.54,
     imageURL:
       'https://a.cdn-hotels.com/gdcs/production133/d294/4e4195aa-b9ca-42cd-923f-e8a65c8c5c7b.jpg',
   })
@@ -54,26 +54,20 @@ export default function Home() {
 
   return (
     <>
-      <h1>Home Page</h1>
       <div key={defaultLocation.city} className="hero-image">
         <img src={defaultLocation.imageURL} alt={defaultLocation.city} />
         <div className="hero-text">
           <h1>{defaultLocation.city}</h1>
-          <p>Sunny 21c</p>
-          <button>Hire me</button>
-        </div>
-      </div>
-      <div className="image-container">
-        <div className="weather-icon">
-          <h2>{data.temperature2m?.toFixed(0)}°C</h2>
-          <img
-            src={`/client/public/images/icon${num}.png`}
-            alt={'the sun'}
-          ></img>
-          <img
-            src={`/client/public/images/icon${num}.png`}
-            alt={'temperature'}
-          ></img>
+          <div className="image-container">
+            <div className="weather-icon">
+              <h2>{data.temperature2m?.toFixed(0)}°C</h2>
+              <img
+                className="icon"
+                src={`/client/public/images/icon${num}.png`}
+                alt={'the sun'}
+              ></img>
+            </div>
+          </div>
         </div>
       </div>
     </>
