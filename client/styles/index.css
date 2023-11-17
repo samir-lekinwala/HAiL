@@ -11,3 +11,8 @@ html,
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+/*homepage css */
+.image-container {
+  background-image: url();
+}
