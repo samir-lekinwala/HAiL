@@ -1,8 +1,8 @@
 /* Colour Palette:
-F6F4EB = grey - main background colour
-91C8E4 = light blue
-749BC2 = grey blue
-4682A9 = dark blue - NavBar
+#F6F4EB = grey - main background colour
+#91C8E4 = light blue
+#749BC2 = grey blue
+#4682A9 = dark blue - NavBar
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
@@ -88,18 +88,58 @@ body {
 }
 /* CSS for View all Locations */
 
+body {
+  background: #f6f4eb;
+}
+
+.locationHeading {
+  text-align: center;
+  color: #25485f;
+  font-size: 2rem;
+}
+
 .locationContainer {
   display: inline-flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .locationImg {
-  width: 300px;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin: 10px;
+  opacity: 1;
 }
 
 .locationButton {
-  background-color: none;
+  background-color: inherit;
   border: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+.locationButton:hover {
+  opacity: 0.5;
+}
+
+.locationText {
+  position: relative;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f6f4eb;
+  font-weight: 800;
+  border-radius: 5px;
+  background: rgba(71, 130, 169, 0.8);
+  padding: 5px 0px;
+  width: 100px;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+.locationText:hover {
+  background: rgba(71, 130, 169, 1);
 }
 
 /*homepage css */
