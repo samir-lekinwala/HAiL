@@ -26,7 +26,7 @@ export default function Locations() {
       <div className="locationContainer">
         {locations?.map((city) => (
           <>
-            <Link key={city.id} to={`locations/${city.id}`}>
+            <Link key={city.id} to={`/${city.id}`}>
               <button className="locationButton">
                 <img
                   className="locationImg"
