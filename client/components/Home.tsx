@@ -28,9 +28,16 @@ export default function Home() {
   // console.log(weatherData)
   return (
     <>
-      <h1>Home Page</h1>
-
-      <div className="image-container">
+      {/* <h1>Home Page</h1> */}
+      <div key={defaultLocation.city} className="hero-image">
+        <img src={defaultLocation.imageURL} alt={defaultLocation.city} />
+        <div className="hero-text">
+          <h1>{defaultLocation.city}</h1>
+          <p>Sunny 21c</p>
+          {/* <button>Hire me</button> */}
+        </div>
+      </div>
+      {/* <div className="image-container">
         <div className="weather-icon">
           <img
             src={
@@ -39,7 +46,7 @@ export default function Home() {
             alt={'the sun'}
           ></img>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }
