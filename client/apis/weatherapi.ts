@@ -1,8 +1,20 @@
 import { fetchWeatherApi } from 'openmeteo'
-export default async function weatherapi() {
+import { Location } from '../../models/location'
+
+interface Weather {
+  time: Date
+  temperature2m: number | undefined
+  rain: number | undefined
+  snowfall: number | undefined
+  cloudCover: number | undefined
+}
+export default async function weatherapi(
+  lat: number,
+  long: number,
+): Promise<Weather> {
   const params = {
-    latitude: 1.3,
-    longitude: 103,
+    latitude: lat,
+    longitude: long,
     current: ['temperature_2m', 'rain', 'snowfall', 'cloud_cover'],
   }
   const url = 'https://api.open-meteo.com/v1/forecast'
@@ -35,5 +47,5 @@ export default async function weatherapi() {
     },
   }
 
-  console.log(weatherData)
+  return weatherData.current
 }

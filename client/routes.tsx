@@ -8,6 +8,6 @@ export default createRoutesFromElements(
   <Route path="/" element={<Layout />}>
     <Route index element={<Home />} />
     <Route path="locations" element={<Locations />} />
-    <Route path="locations/:id" element={<LocationDetails />} />
+    <Route path="/:id" element={<LocationDetails />} />
   </Route>,
 )
