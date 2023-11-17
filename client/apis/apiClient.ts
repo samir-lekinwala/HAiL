@@ -1,4 +1,5 @@
 import request from 'superagent'
+import { Location } from '../../models/location'
 
 const rootUrl = '/api/v1'
 

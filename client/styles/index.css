@@ -85,4 +85,18 @@ body {
 .dropbtn a {
   text-decoration: none;
   color: white;
+/* CSS for View all Locations */
+
+.locationContainer {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.locationImg {
+  width: 300px;
+}
+
+.locationButton {
+  background-color: none;
+  border: none;
 }
